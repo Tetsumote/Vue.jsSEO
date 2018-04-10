@@ -1,0 +1,39 @@
+<template>
+  <div id="app">
+    
+    <div class="container">
+      <div class="inner">
+        <nav>
+          <router-link to="/">Gary Simon</router-link>
+          <ul>
+            <li><router-link to="/">Home</router-link></li>
+            <li><router-link to="/about">About</router-link></li>
+          </ul>
+        </nav>
+        <transition name="fade" mode="out-in">
+            <router-view/>
+        </transition>
+           
+      </div>
+    </div>
+
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App',
+};
+</script>
+
+<style lang="scss">
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+
+}
+</style>
