@@ -1,39 +1,33 @@
 <template>
-  <div class="hello">
-   <p>test</p>
-   <Hello/>
+  <div class="home main-content">
+    <div class="left-content">
+      <h1>20 YRS DESIGN</h1>
+      <p class="subtxt">
+        Gary has been a full stack developer for 2 decades and an instructor for the last 10 years.
+      </p>
+      <p class="subtxt">
+        I've worked with LinkedIn, Lynda, Pluralsight and more.
+      </p>
+    </div>
+
+     <div class="right-content img1">
+      <button><router-link to="/portfolio/one">Browse Work</router-link></button>
+    </div>
   </div>
 </template>
 
 <script>
-//@ is an alias to /src
-import Hello from '@/components/Hello.vue'
+// @ is an alias to /src
+import Hello from '@/components/Hello';
 
 export default {
   name: 'Home',
-  components:{
-    Hello
-  }
+  components: { Hello },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-h1, h2 {
-  font-weight: normal;
-  font-size:12px;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-  li {
-  display: inline-block;
-  margin: 0 10px;
-  font-size:24px;
-}
-}
-
-a {
-  color: #42b983;
-}
+  .img1 {
+    background: url('../assets/home.jpg');
+  }
 </style>

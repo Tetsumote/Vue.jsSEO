@@ -1,37 +1,39 @@
 <template>
-  <div class="hello">
-   <p>test About</p>
+  <div class="about main-content">
+    <div class="left-content">
+      <h1>About me</h1>
+      <p class="subtxt">I design, code, and teach a bunch of other people to do the same.</p>
+
+      <button><router-link to="/portfolio/one">Look at my work</router-link></button>
+    </div>
+    <div class="right-content">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi distinctio amet id recusandae, minima voluptates quo fugit beatae nihil vitae, natus alias debitis placeat. Veniam consequatur autem ullam error adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi distinctio amet id recusandae, minima</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi distinctio amet id recusandae, minima voluptates quo fugit beatae nihil vitae, natus alias debitis placeat. Veniam consequatur autem ullam error adipisci?</p>
+    </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'HelloWorld',
-  data() {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-    };
-  },
-};
-</script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-h1, h2 {
-  font-weight: normal;
-  font-size:12px;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-  li {
-  display: inline-block;
-  margin: 0 10px;
-  font-size:24px;
-}
-}
 
-a {
-  color: #42b983;
-}
+  .left-content {
+    background-color: #ffe476;
+  }
+
+  .right-content {
+    background: #fff;
+    padding: 50px;
+    margin-top: 80px;
+    display: block;
+  }
+
+  button {
+    font-size: 1.5em;
+    margin-top: 100px;
+  }
+
+  .subtxt {
+    font-size: 1.5em;
+    margin-top: 30px;
+  }
+
 </style>
